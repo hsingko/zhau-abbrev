@@ -2,7 +2,7 @@
 
 ;; Copyright (C) 2024  rookie
 
-;; Author: rookie <rookie@onionhat>
+;; Author: hsingko <hsingko@protonmail.com>
 ;; Keywords: abbrev, local
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -126,7 +126,6 @@ same `major-mode'."
   (let (tblsym)
     (setq tblsym (zhau-abbrev--get-tblsym))
     (zhau-abbrev--load-abbrev-table tblsym)))
-
 
 (define-minor-mode zhau-abbrev-mode
   "My abbrev mode suitable for Chinese input"
