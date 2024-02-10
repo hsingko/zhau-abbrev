@@ -83,7 +83,7 @@ same `major-mode'."
 (defun zhau-abbrev-add-marked-word (start end)
   (interactive "r")
   (let (str init-str)
-    (setq str (buffer-substring start end))
+    (setq str (buffer-substring-no-properties start end))
     (zhau-abbrev--add-word str)
     (deactivate-mark)))
 
